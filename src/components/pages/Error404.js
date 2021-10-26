@@ -11,7 +11,9 @@ export default function Error404() {
       <span className='small'>
         keep it on the DL...
         <br />
-        <span className='fst-em text-muted hover-dark'>[&ensp;lowkey.link &emsp; lowkey.network&ensp;]</span>
+        <span className='fst-em text-muted hover-dark'>
+          [&ensp;lowkey.link &emsp; lowkey.network&ensp;]
+        </span>
       </span>
       <br />
     </div>
