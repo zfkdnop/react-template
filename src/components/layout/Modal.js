@@ -1,6 +1,9 @@
 /*
- *
- *
+ * NOTE: We could use refs to get a line on the buttons or other elements...
+ *   const modalNegBtn = useRef();
+ *   const modalAffBtn = useRef();
+ *   <Modal modalID='errormodal' negRef={modalNegBtn} affRef={modalAffBtn}
+ *     ... (in ModalFooter) ... <button ref={props.negRef}> ... <button ref={props.affRef}> ....
  */
 import { createPortal } from 'react-dom';
 
