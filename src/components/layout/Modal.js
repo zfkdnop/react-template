@@ -8,13 +8,12 @@
 import { createPortal } from 'react-dom';
 
 export function ModalFooter({
-  negCallback = undefined,
+  negCallback,
   negTitle = 'Cancel',
-  affCallback = undefined,
+  affCallback,
   affTitle = 'Okay',
-  children = ' ',
+  children,
 }) {
-  //   if (children === undefined) return;
   return (
     <div className='modal-footer'>
       {children}
@@ -34,13 +33,11 @@ export function ModalFooter({
   );
 }
 
-export function ModalBody({ children = ' ' }) {
-  //   if (children === undefined) return;
+export function ModalBody({ children }) {
   return <div className='modal-body'>{children}</div>;
 }
 
-export function ModalTitle({ children = ' ' }) {
-  //   if (children === undefined) return;
+export function ModalTitle({ children }) {
   return (
     <div className='modal-header'>
       <span className='modal-title'>{children}</span>
@@ -49,8 +46,7 @@ export function ModalTitle({ children = ' ' }) {
   );
 }
 
-function ModalDialog({ modalID = undefined, children = undefined }) {
-  if (children === undefined) return null;
+function ModalDialog({ modalID, children }) {
   return (
     <div className='modal fade' tabIndex='-1' id={modalID}>
       <div className='modal-dialog modal-dialog-centered'>
@@ -60,10 +56,10 @@ function ModalDialog({ modalID = undefined, children = undefined }) {
   );
 }
 
-export default function Modal({ modalID = undefined, children = undefined }) {
-  if (children === undefined || modalID === undefined) return null;
+export default function Modal({ modalID, children }) {
+  if (children === undefined || modalID === undefined || String(modalID).trim().length <= 0) return null;
   return createPortal(
-    <ModalDialog modalID={modalID}>{children}</ModalDialog>,
+    <ModalDialog modalID={String(modalID).trim()}>{children}</ModalDialog>,
     document.getElementById('overlay-root')
   );
 }
