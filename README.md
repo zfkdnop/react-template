@@ -6,7 +6,9 @@ Please feel free to point out any issues and provide insight/tips/pointers!
 
 Uses:
 
-    yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome bootstrap @popperjs/core bootswatch react-router-dom
+    yarn add @fortawesome/fontawesome-svg-core bootstrap \
+        @fortawesome/free-solid-svg-icons bootswatch\
+        @fortawesome/react-fontawesome @popperjs/core react-router-dom
 
 ## Available Scripts
 
