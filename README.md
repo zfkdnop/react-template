@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Please feel free to point out any issues and provide insight/tips/pointers!
 
+Uses:
+    yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome bootstrap @popperjs/core bootswatch react-router-dom
+
 ## Available Scripts
 
 In the project directory, you can run:
